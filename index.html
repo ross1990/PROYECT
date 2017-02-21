@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+ <!-- la estructura me sale con html:5 + tecla tab -->
+<html lang="es"> <!-- aca me dice el idioma "es" : español-->
+<head>
+  <meta charset="UTF-8"> <!-- acepta todo tipo de caracter en la red ya sea tildes.-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  <!-- correr en la ultima version posible.-->
+  <title>Mi Profile</title>
+  <link rel="stylesheet" href="assets/css/main.css"> <!-- me lleva al css con ../assets regresa una carpeta anterior al directorio.-->
+</head>
+<body>
+  <header>
+    <nav style="text-align:right">
+    <a href="Logout">Logout</a>
+    </nav>
+  </header>
+  <h1>Rosmeri Delgado</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora id commodi ut similique, adipisci molestiae nulla ab voluptatem dignissimos rem laborum, dolore in magni ducimus ipsa expedita quis, quibusdam repellendus? </p>
+  <section>
+    <h2>Experiencias</h2>
+    <div>
+      <h3>Laboratoria</h3>
+      <p>Coders bootcamp en laboratoria</p>
+      <a target="_blank" href="http://laboratoria.la">Ver pagina de laboratoria</a> <!-- TARGET permite abrir otra pestaña..-->
+   </div>
+   <div>
+     <h3>UPC</h3>
+     <P>Profesor de desarrollo web</P>
+     <a href="http://upc.edu.pe">Ver pagina UPC</a>
+   </div>
+  </section>
+  <section>
+    <form action=" ">
+      <div>
+        <label for="nombre">Nombre:</label> <!-- FOR y INPUT se relacionan con el "id"-->
+        <input id="nombre" type="text">
+        </div>
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" type="text">
+    </div>
+
+    <div>
+      <label for="texto">Deja tu mensaje</label><br>
+      <textarea id="texto" name="texto" rows="4" cols="40"></textarea>
+    </div>
+
+    <div>
+      <button type="submit" name="button">Enviar</button>
+    </div>
+    </form>
+  </section>
+  <script src="assets/js/app.jst"></script> <!--Enlace que llama a javaScript-->
+</body>
+</html>
